@@ -160,10 +160,10 @@
 	"buffers":
 	[
 		{
-			"file": "New Text Document.txt",
+			"file": "README.md",
 			"settings":
 			{
-				"buffer_size": 0,
+				"buffer_size": 29,
 				"line_ending": "Windows"
 			}
 		}
@@ -171,9 +171,13 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 150.0,
+		"height": 196.0,
 		"selected_items":
 		[
+			[
+				"Mark",
+				"Set Syntax: Markdown"
+			],
 			[
 				"ruby",
 				"Set Syntax: Ruby"
@@ -320,6 +324,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/ruby-game-engine/New Text Document.txt",
 		"/C/Users/Drew/Development/Code/Ruby/evented/synchrony.rb",
 		"/C/Users/Drew/Development/Code/Ruby/evented/test1.rb",
 		"/C/Users/Drew/Development/Code/ClientSideFramework/require.js",
@@ -473,23 +478,23 @@
 			[
 				{
 					"buffer": 0,
-					"file": "New Text Document.txt",
+					"file": "README.md",
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 29,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								29,
+								29
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
