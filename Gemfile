@@ -1,4 +1,5 @@
 source :rubygems
 
 gem 'chunky_png'
-gem 'qtbindings'
+gem 'gtk2'
+gem 'eventmachine', '>= 1.0.0.beta.0'

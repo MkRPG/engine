@@ -1,0 +1,29 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    atk (1.1.4-x86-mingw32)
+      glib2 (>= 1.1.4)
+    cairo (1.12.2-x86-mingw32)
+      pkg-config
+    chunky_png (1.2.6)
+    eventmachine (1.0.0.rc.4-x86-mingw32)
+    gdk_pixbuf2 (1.1.4-x86-mingw32)
+      glib2 (>= 1.1.4)
+    glib2 (1.1.4-x86-mingw32)
+      pkg-config
+    gtk2 (1.1.4-x86-mingw32)
+      atk (>= 1.1.4)
+      gdk_pixbuf2 (>= 1.1.4)
+      pango (>= 1.1.4)
+    pango (1.1.4-x86-mingw32)
+      cairo (>= 1.10.0)
+      glib2 (>= 1.1.4)
+    pkg-config (1.1.4)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  chunky_png
+  eventmachine (>= 1.0.0.beta.0)
+  gtk2
