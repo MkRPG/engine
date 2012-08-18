@@ -1,32 +1,19 @@
-require_relative 'boot'
+require_relative 'utils/multi_key_hash'
+require_relative 'utils/map_hash'
 
 class Map
 	attr_accessor :name
+	attr_accessor :game
+	attr_reader :tile_ids, :tiles
+	attr_reader :events
 
 	def initialize(name = nil)
-		@name = if name then name.to_s else name end
-		@pos = {}
-	end
-
-	def [](x, y)
-		@pos[x] ||= {}
-		pos = Pos.new x, y
-		@pos[x][y] ||= pos
-
-		pos
-	end
-
-	class Pos
-		attr_accessor :x, :y
-
-		def initialize(x, y)
-			@x = x
-			@y = y
-			@layers = {}
-		end
-
-		def []=(layer, tile)
-			@layers[layer] = tile
-		end
+		@name = name ? name.to_s : name
+		@tile_ids = MultiKeyHash.new
+		@tiles = MapHash.new(@tile_ids, proc {  |val, *keys| @game.tilesets[val[0]][val[1], val[2]] },
+		                                proc do |new_val, old_val, *keys|
+		                                	@game.add_tileset new_val.tileset
+		                                	[ @game.tilesets.index(new_val.tileset), new_val.x, new_val.y ]
+		                                end)
 	end
 end
