@@ -12,40 +12,31 @@ class Game
 		def initialize(game)
 			super()
 
-			signal_connect 'destroy' do
-				EM.stop
-			end
-
-			signal_connect 'expose-event' do
-				
-			end
-
-			set_default_size 640, 480
-
-			drawingArea = Gtk::DrawingArea.new
-			drawingArea.signal_connect "configure-event" do
-				cr = drawingArea.window.create_cairo_context
-
-				cr.set_source @game.graphics.update().bitmap.surface
-
-				# image = Cairo::ImageSurface.from_png 'C:\Users\Drew\Pictures\Sprites\Jet.png'
-				# cr.set_source image, 0, 0
-				# cr.rectangle 0, 0, image.width, image.height
-				# cr.fill
-
-				# cr.set_source_rgb 0, 0, 0
-				# cr.rectangle image.width + 10, image.height + 10, 1, 1
-				# cr.fill
-
-				# binding.pry
-				# cr.set_source_rgb 1, 1, 0
-				# cr.rectangle 10, 15, 90, 60
-				# cr.fill
-			end
-
-			add drawingArea
-
 			@game = game
+
+			set_title @game.name
+			set_default_size @game.width, @game.height
+
+			image = Gtk::Image.new @game.graphics.bitmap.pixbuf
+			self.resizable = false
+
+			@destroyed = false
+			signal_connect 'destroy' do
+				@destroyed = true
+			end
+
+			update = proc do
+				unless @destroyed
+					@game.graphics.update
+
+					image.queue_draw
+
+					EM.next_tick update
+				end
+			end
+			update.call
+
+			add image
 		end
 
 		def run

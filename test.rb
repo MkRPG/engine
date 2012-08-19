@@ -18,5 +18,18 @@ EM.run do
 	tile = tileset[0, 0]
 	map.tiles[0, 0, 0] = tile
 
+	sprite = game.sprite Bitmap.from_file('C:\Users\Drew\Pictures\Sprites\Jet.png')
+	sprite.x = 600
+
+	game.window.signal_connect 'destroy' do
+		EM.stop
+	end
+
+	move = proc do
+		game.graphics.offset_x += 1
+		EM.next_tick move
+	end
+	move.call
+
 	game.play
 end

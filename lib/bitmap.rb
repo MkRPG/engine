@@ -4,12 +4,14 @@ require_relative 'color'
 
 Rect = Struct.new "Rect", :x, :y, :w, :h
 
+GDK_COLOR_SPACE_RGB = Gdk::Pixbuf::ColorSpace.new "rgb"
+
 class Bitmap
 	attr_reader :pixbuf
 	attr_reader :height, :width
 
 	def initialize(width, height)
-		@pixbuf = Gdk::Pixbuf.new width, height
+		@pixbuf = Gdk::Pixbuf.new GDK_COLOR_SPACE_RGB, true, 8, width, height
 
 		update_dimensions
 	end
@@ -54,7 +56,7 @@ class Bitmap
 		end
 	end
 
-	def crop(x, y, width, height)
+	def crop(x, y, width = @width, height = @height)
 		Bitmap.from_pixbuf crop_pixbuf(x, y, width, height)
 	end
 
@@ -78,8 +80,60 @@ class Bitmap
 		surface
 	end
 
+	def draw(x, y, bitmap)
+		pixbuf = get_pixbuf bitmap
+
+		unless x > width  ||
+		       y > height
+			draw_x, draw_y = x, y
+			part_x = part_y = 0
+
+			if draw_x < 0
+				part_x = -draw_x
+				draw_x = 0
+			end
+			if draw_y < 0
+				part_y = -draw_y
+				draw_y = 0
+			end
+
+			draw_width = @width - draw_x
+			draw_height = @height - draw_y
+
+			draw_width = pixbuf.width if draw_width > pixbuf.width
+			draw_height = pixbuf.height if draw_height > pixbuf.height
+
+			draw_width -= part_x
+			draw_height -= part_y
+
+			pixbuf.copy_area part_x, part_y, draw_width, draw_height, @pixbuf, draw_x, draw_y
+		end
+
+		self
+	end
+
+	def clear(color = 255)
+		color_str = ' '
+		color_str.setbyte 0, color
+		@pixbuf.pixels = color_str * (@pixbuf.width * @pixbuf.height * (@pixbuf.has_alpha? ? 4 : 3))
+
+		self
+	end
+
 private
 	
+	def get_pixbuf(o)
+		if o.is_a?(Bitmap) || o.respond_to?(:pixbuf)
+			get_pixbuf o.pixbuf
+		elsif o.is_a?(Gdk::Pixbuf)
+			o
+		elsif o.respond_to?(:bitmap)
+			get_pixbuf o.bitmap
+		else
+			raise "Cannot get pixbuf from #{o.class}"
+		end
+	end
+
 	def crop_pixbuf(x, y, width, height)
 		Gdk::Pixbuf.new @pixbuf, x, y, width, height
 	end

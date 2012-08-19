@@ -4,6 +4,74 @@
 		"selected_items":
 		[
 			[
+				"draw_h",
+				"draw_height"
+			],
+			[
+				"draw",
+				"draw_width"
+			],
+			[
+				"sin",
+				"signal_connect"
+			],
+			[
+				"dr",
+				"drawingArea"
+			],
+			[
+				"gr",
+				"graphics"
+			],
+			[
+				"cl",
+				"cla	class .. < ParentClass .. initialize .. end"
+			],
+			[
+				"Ti",
+				"TILE_SIZE"
+			],
+			[
+				"til",
+				"tile_ids"
+			],
+			[
+				"tile",
+				"tile_size"
+			],
+			[
+				"init",
+				"initialize_with_pixbuf"
+			],
+			[
+				"save",
+				"save_pixel"
+			],
+			[
+				"h",
+				"has_alpha"
+			],
+			[
+				"pix",
+				"pixbuf"
+			],
+			[
+				"pixe",
+				"pixel_hash"
+			],
+			[
+				"ini",
+				"initialize_with_pixbuf"
+			],
+			[
+				"set_sourc",
+				"set_source_rgb"
+			],
+			[
+				"require",
+				"require_relative"
+			],
+			[
 				"import",
 				"import_multiple"
 			],
@@ -160,10 +228,66 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "lib/game.rb",
 			"settings":
 			{
-				"buffer_size": 29,
+				"buffer_size": 617,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/sprite.rb",
+			"settings":
+			{
+				"buffer_size": 213,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/graphics.rb",
+			"settings":
+			{
+				"buffer_size": 370,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "test.rb",
+			"settings":
+			{
+				"buffer_size": 633,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/game/window.rb",
+			"settings":
+			{
+				"buffer_size": 1905,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/utils/event_emitter.rb",
+			"settings":
+			{
+				"buffer_size": 304,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/bitmap.rb",
+			"settings":
+			{
+				"buffer_size": 2982,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/game/play.rb",
+			"settings":
+			{
+				"buffer_size": 169,
 				"line_ending": "Windows"
 			}
 		}
@@ -171,16 +295,20 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 196.0,
+		"height": 242.0,
 		"selected_items":
 		[
 			[
-				"Mark",
-				"Set Syntax: Markdown"
+				"disa",
+				"Package Control: Disable Package"
 			],
 			[
 				"ruby",
 				"Set Syntax: Ruby"
+			],
+			[
+				"Mark",
+				"Set Syntax: Markdown"
 			],
 			[
 				"Package Control: ",
@@ -267,10 +395,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"disa",
-				"Package Control: Disable Package"
-			],
-			[
 				"ja",
 				"Set Syntax: JavaScript"
 			],
@@ -307,7 +431,7 @@
 				"Set Syntax: JavaScript (Rails)"
 			]
 		],
-		"width": 400.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -324,6 +448,30 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/scenes/title.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/tileset.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/tile.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/constants.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/bitmap.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/map.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/game/play.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/map/tile.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/utils/multi_key_hash.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/utils/map_hash.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/utils/event_emitter.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/game/app.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/game/app/window.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/color.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/bitmap/pixel.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/image.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/images/image.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/test.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/Gemfile",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/cli.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/boot.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/README.md",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/engine.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/ruby-game-engine.sublime-project",
 		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/ruby-game-engine/New Text Document.txt",
 		"/C/Users/Drew/Development/Code/Ruby/evented/synchrony.rb",
 		"/C/Users/Drew/Development/Code/Ruby/evented/test1.rb",
@@ -436,6 +584,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"height",
+			"width",
+			"size",
+			"32",
+			"draw",
+			"tileset_",
+			"map",
+			"set_proc",
+			"args",
+			"value",
+			"top, right, bottom, left",
 			"self",
 			"Syntax::String",
 			"ctrl+shift+n",
@@ -473,28 +632,215 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
+					"file": "lib/game.rb",
 					"settings":
 					{
-						"buffer_size": 29,
+						"buffer_size": 617,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								576,
+								576
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/sprite.rb",
+					"settings":
+					{
+						"buffer_size": 213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								204,
+								204
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/graphics.rb",
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								220,
+								186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "test.rb",
+					"settings":
+					{
+						"buffer_size": 633,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								633,
+								633
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "lib/game/window.rb",
+					"settings":
+					{
+						"buffer_size": 1905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1359,
+								1359
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "lib/utils/event_emitter.rb",
+					"settings":
+					{
+						"buffer_size": 304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								21,
+								21
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "lib/bitmap.rb",
+					"settings":
+					{
+						"buffer_size": 2982,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1484,
+								1484
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1014.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "lib/game/play.rb",
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

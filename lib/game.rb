@@ -1,4 +1,5 @@
 require_relative 'graphics'
+require_relative 'sprite'
 
 class Game
 	attr_accessor :name
@@ -6,13 +7,16 @@ class Game
 	attr_reader :tilesets
 	attr_reader :graphics
 	attr_reader :sprites
+	attr_accessor :width, :height
 
 	def initialize(name = nil)
 		@name = name ? name.to_s : name
 		@tilesets = []
 		@maps = []
 		@sprites = []
+		@width, @height = 640, 480
 		@graphics = Graphics.new self
+
 		$game = self
 	end
 
@@ -29,7 +33,11 @@ class Game
 		self
 	end
 
-	def sprite(bitmap = nil)
+	def sprite(*args)
+		sprite = Sprite.new self, *args
 
+		@sprites << sprite
+
+		sprite
 	end
 end

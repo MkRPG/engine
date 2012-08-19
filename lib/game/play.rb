@@ -6,9 +6,12 @@ require_relative 'window'
 class Game
 	attr_reader :window
 
+	def window
+		@window ||= Window.new self
+	end
+
 	def play
-		@window = Window.new self
-		@window.run
+		window.run
 		
 		self
 	end
