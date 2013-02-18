@@ -4,6 +4,158 @@
 		"selected_items":
 		[
 			[
+				"draw",
+				"draw_text"
+			],
+			[
+				"pix",
+				"pixbuf"
+			],
+			[
+				"color",
+				"colormap"
+			],
+			[
+				"Gd",
+				"GDK_COLOR_MAP"
+			],
+			[
+				"GD",
+				"GDK_COLOR_MAP"
+			],
+			[
+				"rec",
+				"rectangle"
+			],
+			[
+				"from_",
+				"from_pixmap"
+			],
+			[
+				"pixel",
+				"pixel_pos"
+			],
+			[
+				"get_",
+				"get_pixel"
+			],
+			[
+				"gr",
+				"graphics"
+			],
+			[
+				"spr",
+				"sprite_pos"
+			],
+			[
+				"sp",
+				"sprite_pos"
+			],
+			[
+				"add",
+				"add_sprite"
+			],
+			[
+				"la",
+				"last_frame"
+			],
+			[
+				"end",
+				"end_time"
+			],
+			[
+				"run",
+				"run_time"
+			],
+			[
+				"start",
+				"start_run"
+			],
+			[
+				"part",
+				"part_y"
+			],
+			[
+				"draw_",
+				"draw_width"
+			],
+			[
+				"dra",
+				"draw_x"
+			],
+			[
+				"of",
+				"offset_y"
+			],
+			[
+				"off",
+				"offset_x"
+			],
+			[
+				"dest",
+				"destroyed"
+			],
+			[
+				"attr",
+				"attr_accessor"
+			],
+			[
+				"draw_h",
+				"draw_height"
+			],
+			[
+				"sin",
+				"signal_connect"
+			],
+			[
+				"dr",
+				"drawingArea"
+			],
+			[
+				"cl",
+				"cla	class .. < ParentClass .. initialize .. end"
+			],
+			[
+				"Ti",
+				"TILE_SIZE"
+			],
+			[
+				"til",
+				"tile_ids"
+			],
+			[
+				"tile",
+				"tile_size"
+			],
+			[
+				"init",
+				"initialize_with_pixbuf"
+			],
+			[
+				"save",
+				"save_pixel"
+			],
+			[
+				"h",
+				"has_alpha"
+			],
+			[
+				"pixe",
+				"pixel_hash"
+			],
+			[
+				"ini",
+				"initialize_with_pixbuf"
+			],
+			[
+				"set_sourc",
+				"set_source_rgb"
+			],
+			[
+				"require",
+				"require_relative"
+			],
+			[
 				"import",
 				"import_multiple"
 			],
@@ -160,10 +312,18 @@
 	"buffers":
 	[
 		{
-			"file": "README.md",
+			"file": "/C/Users/Drew/Documents/RPGVXAce/RGSS/Data/get_scripts.rb",
 			"settings":
 			{
-				"buffer_size": 29,
+				"buffer_size": 133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "lib/mkrpg/engine.rb",
+			"settings":
+			{
+				"buffer_size": 154,
 				"line_ending": "Windows"
 			}
 		}
@@ -171,16 +331,24 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 196.0,
+		"height": 58.0,
 		"selected_items":
 		[
 			[
-				"Mark",
-				"Set Syntax: Markdown"
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
 			],
 			[
 				"ruby",
 				"Set Syntax: Ruby"
+			],
+			[
+				"Mark",
+				"Set Syntax: Markdown"
 			],
 			[
 				"Package Control: ",
@@ -189,10 +357,6 @@
 			[
 				"coffee",
 				"Set Syntax: CoffeeScript"
-			],
-			[
-				"install",
-				"Package Control: Install Package"
 			],
 			[
 				"package control: ",
@@ -267,10 +431,6 @@
 				"Package Control: Remove Package"
 			],
 			[
-				"disa",
-				"Package Control: Disable Package"
-			],
-			[
 				"ja",
 				"Set Syntax: JavaScript"
 			],
@@ -307,7 +467,7 @@
 				"Set Syntax: JavaScript (Rails)"
 			]
 		],
-		"width": 400.0
+		"width": 472.0
 	},
 	"console":
 	{
@@ -324,6 +484,53 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/test.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/mkrpg/engine/map.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/mkrpg/engine/game.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/mkrpg/engine/constants.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/mkrpg/engine/color.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/mkrpg/engine/boot.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/color.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/scenes/title.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/scene.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/game.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/graphics.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/sprite.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/bitmap.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23928-1oac5ju.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23928-c7uj86.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-10tiqfq.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-5lfu15.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-11uiscm.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-9xuite.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-1bmvdsd.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-12sdmu1.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-rj4zpd.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-tld7jr.rb",
+		"/C/Users/Drew/AppData/Local/Temp/pry20120826-23888-zmxhvd.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/main.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/game/window.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/game/play.rb",
+		"/C/Users/Drew/Development/Code/Ruby/GUI/gtk.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/utils/event_emitter.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/tileset.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/tile.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/constants.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/map.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/map/tile.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/utils/multi_key_hash.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/utils/map_hash.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/game/app.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/game/app/window.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/bitmap/pixel.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/image.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/images/image.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/Gemfile",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/cli.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/boot.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/README.md",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/lib/engine.rb",
+		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/ruby-game-engine.sublime-project",
 		"/C/Users/Drew/Development/Code/Github/drewyoung1/ruby-game-engine/ruby-game-engine/New Text Document.txt",
 		"/C/Users/Drew/Development/Code/Ruby/evented/synchrony.rb",
 		"/C/Users/Drew/Development/Code/Ruby/evented/test1.rb",
@@ -404,21 +611,7 @@
 		"/C/Users/Drew/Development/Code/nodejs-app-0/package.json",
 		"/C/Users/Drew/Development/Code/nodejs-app-0/index.js",
 		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/HTML/html_completions.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/zencoding/interface/editor.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/zencoding/__init__.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/sublimezenplugin.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/sublimezen.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/exec.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences (Windows).sublime-settings",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/User/JSON.sublime-settings",
-		"/C/Users/Drew/Development/test-project.sublime-project",
-		"/C/Users/Drew/something.txt",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/SublimeREPL/SublimeREPL.sublime-settings",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/echo.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/mark.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/scroll.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/switch_file.py",
-		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/Default/transpose.py"
+		"/C/Users/Drew/AppData/Roaming/Sublime Text 2/Packages/ZenCoding/zencoding/interface/editor.py"
 	],
 	"find":
 	{
@@ -436,6 +629,38 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pixmap",
+			"pixbuf",
+			"pixmap",
+			"update_dimensions",
+			"key",
+			"val",
+			"pixbuf",
+			"((?:\\n|\\r|^)\\s*)\\# ?",
+			"(?:\\n|\\r|^)\\s*\\#",
+			"(?:\\n|\\r|^)\\s*(\\#)",
+			"(?:\\n|\\r|^)\\s*\\#",
+			"(?:\\n|^)\\s*\\#",
+			"\\n\\s*\\#",
+			"^\\s*\\#",
+			"\\s*\\#",
+			"pixel_pos",
+			"#",
+			"Rect",
+			"@fixed",
+			"game.graphics.",
+			"x",
+			"height",
+			"width",
+			"size",
+			"32",
+			"draw",
+			"tileset_",
+			"map",
+			"set_proc",
+			"args",
+			"value",
+			"top, right, bottom, left",
 			"self",
 			"Syntax::String",
 			"ctrl+shift+n",
@@ -458,11 +683,12 @@
 			"he"
 		],
 		"highlight": true,
-		"in_selection": false,
+		"in_selection": true,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"\\1"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -473,28 +699,54 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "README.md",
+					"file": "/C/Users/Drew/Documents/RPGVXAce/RGSS/Data/get_scripts.rb",
 					"settings":
 					{
-						"buffer_size": 29,
+						"buffer_size": 133,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29,
-								29
+								81,
+								81
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/mkrpg/engine.rb",
+					"settings":
+					{
+						"buffer_size": 154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								154,
+								154
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -542,7 +794,7 @@
 	},
 	"replace":
 	{
-		"height": 0.0
+		"height": 62.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -567,8 +819,16 @@
 		"selected_items":
 		[
 			[
+				"ruby",
+				"/C/Users/Drew/Development/Code/Ruby/Ruby.sublime-project"
+			],
+			[
+				"edit",
+				"/C/Users/Drew/Development/Code/EditIt/EditIT.sublime-project"
+			],
+			[
 				"",
-				"/C/Users/Drew/School/Fairy Tale/Fairy Tale.sublime-project"
+				"/C/Users/Drew/Development/Code/Ruby/Ruby.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -577,6 +837,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 251.0,
+	"side_bar_width": 212.0,
 	"status_bar_visible": true
 }
