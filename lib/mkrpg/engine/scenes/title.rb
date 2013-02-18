@@ -11,7 +11,7 @@ class SceneTitle < Scene
 
 				Game.scene = SceneMap.new
 			when :continue
-				# TODO: Show Load Scene
+				Game.scene = SceneLoad.new
 			when :quit
 				EM.stop
 			end

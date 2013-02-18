@@ -53,4 +53,18 @@ class Color
 
 	# 	[ h, s, v ]
 	# end
+
+	def to_bstr
+		str = "    "
+		str.encode! Encoding.find("ASCII-8BIT")
+		str.setbyte 0, @r
+		str.setbyte 1, @g
+		str.setbyte 2, @b
+		str.setbyte 3, @a
+		str
+	end
+
+	def to_gdk
+		Gdk::Color.new @r, @b, @g
+	end
 end
